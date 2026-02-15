@@ -55,7 +55,7 @@ namespace BankAccountNS
 
         public static void Main()
         {
-            BankAccount ba = new BankAccount("Mr. Roman Abramovich", 11.99);
+            BankAccount ba = new BankAccount("Mr. Pelevin V.", 11.99);
 
             ba.Credit(5.77);
             ba.Debit(11.22);
@@ -64,4 +64,6 @@ namespace BankAccountNS
         }
     }
 }
+// TODO поменять double на decimal
+// TODO баг в методе Debit
 
