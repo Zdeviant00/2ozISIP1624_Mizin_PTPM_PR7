@@ -115,3 +115,20 @@ public void Debit(double amount)
 | 8 | ![Тест 8](https://github.com/user-attachments/assets/9dbf88e5-bf69-4e38-ac0e-fee15219c65e) |
 | 9 | ![Тест 9](https://github.com/user-attachments/assets/8f9f683d-a744-4cc0-b8ba-ff65fa0e74c8) |
 | 10| ![Тест 10](https://github.com/user-attachments/assets/293e14bb-0bb2-484e-a05e-ec3efd8b3fa9) |
+
+### 🔧 Этап 5: Создание проекта модульного теста
+
+Создан проект `BankTests` на платформе `.NET 10.0` с первым тестовым методом `Debit_WithValidAmount_UpdatesBalance`.
+
+**Адаптация кода из Практической работы:**
+- Тип данных изменён с `double` на `decimal` для согласованности с основным проектом
+- Убран допуск `0.001` при сравнении — для типа `decimal` используется точное сравнение
+- Структура теста (`Arrange/Act/Assert`) и тестовые значения сохранены без изменений
+
+**Ожидаемый результат теста:** ❌ Провал  
+**Причина:** Логическая ошибка в методе `Debit` (`m_balance += amount` вместо `m_balance -= amount`)
+
+**Результат:** ❌ Тест провален
+
+**Причина провала:** Логическая ошибка в методе `Debit` — используется оператор `+=` вместо `-=` для уменьшения баланса.
+(https://github.com/user-attachments/assets/857c6ed1-1c79-4cc1-a058-26d12551b399)
