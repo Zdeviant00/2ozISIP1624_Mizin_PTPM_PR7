@@ -8,11 +8,11 @@ namespace BankAccountNS
     public class BankAccount
     {
         private readonly string m_customerName;
-        private double m_balance;
+        private decimal m_balance;
 
         private BankAccount() { }
 
-        public BankAccount(string customerName, double balance)
+        public BankAccount(string customerName, decimal balance)
         {
             m_customerName = customerName;
             m_balance = balance;
@@ -23,12 +23,12 @@ namespace BankAccountNS
             get { return m_customerName; }
         }
 
-        public double Balance
+        public decimal Balance
         {
             get { return m_balance; }
         }
 
-        public void Debit(double amount)
+        public void Debit(decimal amount)
         {
             if (amount > m_balance)
             {
@@ -43,7 +43,7 @@ namespace BankAccountNS
             m_balance += amount;
         }
 
-        public void Credit(double amount)
+        public void Credit(decimal amount)
         {
             if (amount < 0)
             {
@@ -55,15 +55,57 @@ namespace BankAccountNS
 
         public static void Main()
         {
-            BankAccount ba = new BankAccount("Mr. Pelevin V.", 11.99);
+            Console.Write("Enter initial balance: $");
+            decimal initialBalance = decimal.Parse(Console.ReadLine());
 
-            ba.Credit(5.77);
-            ba.Debit(11.22);
-            Console.WriteLine("Current balance is ${0}", ba.Balance);
+            BankAccount ba = new BankAccount("Mr. Pelevin V.", initialBalance);
+
+            Console.Write("Enter Credit amount (0 to skip): $");
+            decimal creditAmount = decimal.Parse(Console.ReadLine());
+
+            if (creditAmount > 0)
+            {
+                try
+                {
+                    ba.Credit(creditAmount);
+                    Console.WriteLine($"✓ Credit successful. New balance: {ba.Balance:C}");
+                }
+                catch (ArgumentOutOfRangeException ex)
+                {
+                    Console.WriteLine($"✗ Credit failed: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("→ Credit skipped");
+            }
+            Console.WriteLine();
+
+            Console.Write("Enter Debit amount (0 to skip): $");
+            decimal debitAmount = decimal.Parse(Console.ReadLine());
+
+            if (debitAmount > 0)
+            {
+                try
+                {
+                    ba.Debit(debitAmount);
+                    Console.WriteLine($"✓ Debit successful. New balance: {ba.Balance:C}");
+                }
+                catch (ArgumentOutOfRangeException ex)
+                {
+                    Console.WriteLine($"✗ Debit failed: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("→ Debit skipped");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine($"Current balance is: {ba.Balance:C} ===");
             Console.ReadLine();
         }
     }
 }
-// TODO поменять double на decimal
-// TODO баг в методе Debit
+
 
