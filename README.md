@@ -105,13 +105,13 @@ public void Debit(double amount)
 
 | № | Скриншот |
 |---|----------|
-| 1 | ![Тест 1](<img width="576" height="297" alt="image" src="https://github.com/user-attachments/assets/7c154ddf-7d4f-4d81-ac96-02d6de9d3b5e" />) |
-| 2 | ![Тест 2](<img width="568" height="222" alt="image" src="https://github.com/user-attachments/assets/b0724d98-7286-4b88-b959-1b5611e784c0" />) |
-| 3 | ![Тест 3](<img width="575" height="265" alt="image" src="https://github.com/user-attachments/assets/f4b109f7-f934-480e-89d2-bb438b71c21b" />) |
-| 4 | ![Тест 4](<img width="1137" height="246" alt="image" src="https://github.com/user-attachments/assets/e5357037-53d4-4bea-aebe-67075e22e256" />) |
-| 5 | ![Тест 5](<img width="1138" height="286" alt="image" src="https://github.com/user-attachments/assets/841d9bdb-18e7-4ace-bc7f-4cc1564f8657" />) |
-| 6 | ![Тест 6](<img width="536" height="272" alt="image" src="https://github.com/user-attachments/assets/e1b0701d-92ca-48b1-b248-2cf467f89af3" />) |
-| 7 | ![Тест 7](<img width="526" height="272" alt="image" src="https://github.com/user-attachments/assets/ba8d5ee8-d324-4b35-aaa0-b0e13536a024" />) |
-| 8 | ![Тест 8](<img width="1150" height="206" alt="image" src="https://github.com/user-attachments/assets/9dbf88e5-bf69-4e38-ac0e-fee15219c65e" />) |
-| 9 | ![Тест 9](<img width="547" height="258" alt="image" src="https://github.com/user-attachments/assets/8f9f683d-a744-4cc0-b8ba-ff65fa0e74c8" />) |
-| 10| ![Тест 10](<img width="1125" height="278" alt="image" src="https://github.com/user-attachments/assets/293e14bb-0bb2-484e-a05e-ec3efd8b3fa9" />) |
+| 1 | ![Тест 1](https://github.com/user-attachments/assets/7c154ddf-7d4f-4d81-ac96-02d6de9d3b5e) |
+| 2 | ![Тест 2](https://github.com/user-attachments/assets/b0724d98-7286-4b88-b959-1b5611e784c0) |
+| 3 | ![Тест 3](https://github.com/user-attachments/assets/f4b109f7-f934-480e-89d2-bb438b71c21b) |
+| 4 | ![Тест 4](https://github.com/user-attachments/assets/e5357037-53d4-4bea-aebe-67075e22e256) |
+| 5 | ![Тест 5](https://github.com/user-attachments/assets/841d9bdb-18e7-4ace-bc7f-4cc1564f8657) |
+| 6 | ![Тест 6](https://github.com/user-attachments/assets/e1b0701d-92ca-48b1-b248-2cf467f89af3) |
+| 7 | ![Тест 7](https://github.com/user-attachments/assets/ba8d5ee8-d324-4b35-aaa0-b0e13536a024) |
+| 8 | ![Тест 8](https://github.com/user-attachments/assets/9dbf88e5-bf69-4e38-ac0e-fee15219c65e) |
+| 9 | ![Тест 9](https://github.com/user-attachments/assets/8f9f683d-a744-4cc0-b8ba-ff65fa0e74c8) |
+| 10| ![Тест 10](https://github.com/user-attachments/assets/293e14bb-0bb2-484e-a05e-ec3efd8b3fa9) |
