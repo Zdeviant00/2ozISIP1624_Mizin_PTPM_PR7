@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace BankAccountNS
 {
@@ -56,14 +57,14 @@ namespace BankAccountNS
         public static void Main()
         {
             Console.Write("Enter initial balance: $");
-            decimal initialBalance = decimal.Parse(Console.ReadLine());
+            decimal initialBalance = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             BankAccount ba = new BankAccount("Mr. Pelevin V.", initialBalance);
 
             Console.Write("Enter Credit amount (0 to skip): $");
-            decimal creditAmount = decimal.Parse(Console.ReadLine());
+            decimal creditAmount = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            if (creditAmount > 0)
+            if (creditAmount != 0)
             {
                 try
                 {
@@ -82,9 +83,9 @@ namespace BankAccountNS
             Console.WriteLine();
 
             Console.Write("Enter Debit amount (0 to skip): $");
-            decimal debitAmount = decimal.Parse(Console.ReadLine());
+            decimal debitAmount = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            if (debitAmount > 0)
+            if (debitAmount != 0)
             {
                 try
                 {
