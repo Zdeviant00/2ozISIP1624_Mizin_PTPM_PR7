@@ -155,4 +155,5 @@ public void Debit(double amount)
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
 public const string DebitAmountLessThanZeroMessage = "Debit amount is less than zero";
 
-![unit1.2](https://github.com/user-attachments/assets/d7cb1d55-54f3-42c0-85bb-004c655b6d89)
+![unit1.2](images/unit1_2.jpg)
+
