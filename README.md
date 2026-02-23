@@ -147,3 +147,13 @@ public void Debit(double amount)
 
 ![unit1.1](https://github.com/user-attachments/assets/ad17c07b-9987-4d31-882c-80f92f1ca9e8)
 
+### 🔧 Этап 7: Улучшение кода через модульные тесты
+
+#### Рефакторинг метода `Debit`
+Добавлены константы для информативных сообщений об ошибках:
+```csharp
+public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
+public const string DebitAmountLessThanZeroMessage = "Debit amount is less than zero";
+
+![unit1.1]([https://github.com/user-attachments/assets/ad17c07b-9987-4d31-882c-80f92f1ca9e8](https://github.com/user-attachments/assets/454b3b5f-9d20-4221-bf91-e672ccf5f8c0))
+
