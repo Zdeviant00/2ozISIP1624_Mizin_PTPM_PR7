@@ -145,5 +145,5 @@ public void Debit(double amount)
 - Ожидаемый результат: $7.44
 - Фактический результат: $7.44
 
-![unit1.1] (https://github.com/user-attachments/assets/ad17c07b-9987-4d31-882c-80f92f1ca9e8)
+![unit1.1](https://github.com/user-attachments/assets/ad17c07b-9987-4d31-882c-80f92f1ca9e8)
 
