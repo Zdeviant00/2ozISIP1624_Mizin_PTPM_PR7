@@ -131,4 +131,5 @@ public void Debit(double amount)
 **Результат:** ❌ Тест провален
 
 **Причина провала:** Логическая ошибка в методе `Debit` — используется оператор `+=` вместо `-=` для уменьшения баланса.
-![unit1](https://github.com/user-attachments/assets/857c6ed1-1c79-4cc1-a058-26d12551b399)
+![unit1](https://github.com/user-attachments/assets/190afecc-ebcc-4b0f-a98e-497e0dc67e36)
+
