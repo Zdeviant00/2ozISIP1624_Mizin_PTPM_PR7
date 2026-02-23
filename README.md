@@ -182,7 +182,9 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
    - Создано 5 модульных тестов (3 для `Debit`, 2 для `Credit`)
    - Все тесты проходят успешно после исправления багов
 
-**Результат:** Код стал более надежным и информативным, что соответствует требованиям методички.
+**Результат:** Код стал более надежным и информативным
 
 ![unit1.2](images/unit1.2.jpg)
+
+![final](images/final.jpg)
 
